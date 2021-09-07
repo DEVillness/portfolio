@@ -2,24 +2,16 @@
 <header>
     <ul>
         <li>
-            <a href="#">
-                <img alt="Home" src="images/home.png">
-            </a>
+            <img alt="Home" src="images/home.png">
         </li>
         <li>
-            <a href="#">
-                <img alt="Profile" src="images/profile.png">
-            </a>
+            <img alt="Profile" src="images/profile.png">
         </li>
         <li>
-            <a href="#">
-                <img alt="Resume" src="images/tech.png">
-            </a>
+            <img alt="Resume" src="images/graduation.png">
         </li>
         <li>
-            <a href="#">
-                <img alt="Message" src="images/mail.png">
-            </a>
+            <img alt="Message" src="images/mail.png">
         </li>
     </ul>
 </header>

@@ -10,6 +10,7 @@
           href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Inconsolata:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="stylesheets/common.css">
     <link rel="stylesheet" href="stylesheets/index.css">
+    <script defer src="scripts/index.js"></script>
     <title>📚 DEVIllness's Portfolio</title>
 </head>
 <body>
@@ -134,7 +135,7 @@
                 </div>
                 <div>
                     <img alt="Github" src="images/github.png">
-                    <span onclick="window.open('https://github.com/Devillness');" style="cursor:pointer;">#Devillness</span>
+                    <span id="github">#Devillness</span>
                 </div>
                 <div>
                     <img alt="Email" src="images/mail.png">

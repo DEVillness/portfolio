@@ -27,8 +27,16 @@ body > main > section.splash.message > div > div.left > div {
     justify-content: space-evenly;
 }
 
+body > main > section.splash.message > div > div.left > div > img {
+    width: 4rem;
+}
+
 body > main > section.splash.message > div > div.left > div > span {
     display: block;
+}
+
+body > main > section.splash.message > div > div.left > div > span#github {
+    cursor:pointer;
 }
 
 body > main > section.splash.message > div > div.right > form {
