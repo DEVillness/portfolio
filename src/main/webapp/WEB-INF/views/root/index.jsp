@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap">
+          href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Inconsolata:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="stylesheets/common.css">
     <link rel="stylesheet" href="stylesheets/index.css">
     <title>📚 DEVIllness's Portfolio</title>
@@ -16,20 +16,46 @@
 <%@ include file="/WEB-INF/views/header.jsp" %>
 <main>
     <section class="splash home">
-        <div class="home container">
-            <h1>DEVIllness</h1>
+        <div class="container">
+            <h1>DevIllness</h1>
             <h2>Web Backend Developer</h2>
         </div>
     </section>
     <section class="splash profile">
-        <div class="profile container"></div>
+        <div class="container">
+            <span class="phrase">A Lifelong Apprentice</span>
+            <div class="division">
+                <span>
+                    만나서 반갑습니다!🤗
+                    <br>
+                    저는 항상 어제보다 나은 사람이 되고 싶은 개발자입니다.
+                    <br>
+                    현재는 웹 백엔드 개발을 하고 있고,
+                    <br>
+                    항상 새롭고 신기한 것들을 배우려고 노력하고 있습니다.
+                </span>
+            </div>
+            <div class="divider"></div>
+            <div class="division">
+                <span>
+                    Hello, World!🙋‍♂
+                    <br>
+                    I am a developer who wants to be greater than yesterday.
+                    <br>
+                    Now I'm basically developing web backends,
+                    <br>
+                    and also always open to learn anything new and amazing.
+                </span>
+            </div>
+        </div>
     </section>
     <section class="splash tech">
-        <div class="tech container">
-            <div class="left_division">
+        <div class="container">
+            <div>
                 <div class="career">
                     <span class="date">2021</span>
-                    <span><nobr>한양대학교 공과대학 융합전자공학부 학사 (21.02.19)</nobr></span>
+                    <span><nobr>한양대학교 공과대학 융합전자공학부 학사</nobr></span>
+                    <span><nobr>Hanyang University, B.Sc. in Electronic Engineering</nobr></span>
                 </div>
                 <div class="stacks">
                     <span>#Java</span>
@@ -45,7 +71,7 @@
                     <span><nobr>#TOEIC: 955</nobr></span>
                 </div>
             </div>
-            <div class="right_division">
+            <div>
                 <div class="graph">
                     <div class="back-end">
                         <div class="text">
@@ -94,16 +120,42 @@
                     </div>
                 </div>
                 <div class="projects">
-                    <span>Projects that I worked on</span>
+                    <span>Projects that I have worked on</span>
                 </div>
             </div>
         </div>
     </section>
     <section class="splash message">
-        <div class="message container">
-            <form method="post" rel="message-form">
-
-            </form>
+        <div class="container">
+            <div class="left">
+                <div>
+                    <img alt="Github" src="images/location.png">
+                    <span>Daegu, Republic of Korea</span>
+                </div>
+                <div>
+                    <img alt="Github" src="images/github.png">
+                    <span onclick="window.open('https://github.com/Devillness');" style="cursor:pointer;">#Devillness</span>
+                </div>
+                <div>
+                    <img alt="Email" src="images/mail.png">
+                    <span>seong02219@gmail.com</span>
+                </div>
+                <div>
+                    <img alt="Github" src="images/check.png">
+                    <span>Currently Freelance</span>
+                </div>
+            </div>
+            <div class="right">
+                <form method="post" rel="message-form">
+                    <label>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Available Email">
+                        <input type="text" placeholder="Title">
+                        <textarea></textarea>
+                        <input type="submit" value="Send Message">
+                    </label>
+                </form>
+            </div>
         </div>
     </section>
 </main>

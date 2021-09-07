@@ -1,0 +1,61 @@
+body > main > section.splash.message > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body > main > section.splash.message > div > div {
+    width: 45%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+body > main > section.splash.message > div > div.left > div {
+    width: 70%;
+    height: 23%;
+    align-items: center;
+    background-color: #dfdfdf;
+    border-radius: 1rem;
+    color: #007acc;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata', 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+
+body > main > section.splash.message > div > div.left > div > span {
+    display: block;
+}
+
+body > main > section.splash.message > div > div.right > form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body > main > section.splash.message > div > div.right > form > label {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body > main > section.splash.message > div > div.right > form > label > input {
+    width: 70%;
+    height: 1.5rem;
+}
+
+body > main > section.splash.message > div > div.right > form > label > textarea {
+    width: 70%;
+    height: 60%;
+    resize: none;
+}

@@ -1,3 +1,6 @@
 @import "index.header.css";
 @import "index.splash.css";
+@import "index.home.css";
+@import "index.profile.css";
 @import "index.tech.css";
+@import "index.message.css";

@@ -1,0 +1,28 @@
+body > main > section.splash.profile > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+body > main > section.splash.profile > div > span.phrase {
+    color: #007acc;
+    font-family: 'Inconsolata', 'Nanum Gothic', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+body > main > section.splash.profile > div > div.divider {
+    height: 0.25rem;
+    width: 100%;
+    background-color: #007acc;
+}
+
+body > main > section.splash.profile > div > div.division {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10%;
+    line-height: 175%;
+}

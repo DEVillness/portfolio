@@ -12,4 +12,6 @@ public class RootController {
     public String indexGet() {
         return "root/index";
     }
+
+    // TODO: POST Controller, Mybatis Mapper, Create DB, Service
 }

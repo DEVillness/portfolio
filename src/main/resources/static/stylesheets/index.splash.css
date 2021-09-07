@@ -1,31 +1,21 @@
 body > main > section.splash {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     align-items: center;
+    background-color: #3f3f3f;
+    border: 1rem solid #ffffff;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-body > main > section.splash.home {
-    background-color: #000000
-}
-
-body > main > section.splash.profile {
-    background-color: #3f3f3f
-}
-
-body > main > section.splash.message {
-    background-color: #bfbfbf
-}
-
-body > main > section.splash > div {
-    width: 60%;
-    height: 60%;
+body > main > section.splash > div.container {
+    width: 70%;
+    height: 80%;
     background-color: #ffffff;
     border-radius: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 0 10rem -0.5rem rgba(0, 0, 0, 1);
     padding: 5rem;
 }

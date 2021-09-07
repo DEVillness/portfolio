@@ -1,5 +1,7 @@
-body > main > section.splash.tech {
-    background-color: #7f7f7f
+body > main > section.splash.tech > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 body > main > section.splash.tech > div > div {
@@ -29,7 +31,7 @@ body > main > section.splash.tech > div > div > div.career > span {
 }
 
 body > main > section.splash.tech > div > div > div.career > span.date {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 body > main > section.splash.tech > div > div > div.stacks {
@@ -64,9 +66,12 @@ body > main > section.splash.tech > div > div > div.graph > div > div.container 
 }
 
 body > main > section.splash.tech > div > div > div.graph > div > div.container > div {
+    top: 50%;
+    left: 0;
     height: 100%;
     background-color: #007acc;
     border-radius: 1rem;
+    /*transform: translateY(-50%);*/
 }
 
 body > main > section.splash.tech > div > div > div.graph > div.back-end > div.container > div {
