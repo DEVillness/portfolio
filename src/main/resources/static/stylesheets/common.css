@@ -1,0 +1,27 @@
+html {
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 0.85rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}

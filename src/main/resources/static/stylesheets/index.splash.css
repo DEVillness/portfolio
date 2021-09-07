@@ -1,0 +1,31 @@
+body > main > section.splash {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+body > main > section.splash.home {
+    background-color: #000000
+}
+
+body > main > section.splash.profile {
+    background-color: #3f3f3f
+}
+
+body > main > section.splash.message {
+    background-color: #bfbfbf
+}
+
+body > main > section.splash > div {
+    width: 60%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+}
