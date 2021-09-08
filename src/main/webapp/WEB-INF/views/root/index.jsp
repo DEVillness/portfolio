@@ -149,10 +149,10 @@
             <div class="right">
                 <form method="post" rel="message-form">
                     <label>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Available Email">
-                        <input type="text" placeholder="Title">
-                        <textarea></textarea>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Available Email">
+                        <input type="text" name="title" placeholder="Title">
+                        <textarea name="content"></textarea>
                         <input type="submit" value="Send Message">
                     </label>
                 </form>
