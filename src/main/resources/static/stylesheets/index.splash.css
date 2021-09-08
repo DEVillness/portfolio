@@ -8,6 +8,7 @@ body > main > section.splash {
     display: flex;
     justify-content: center;
     position: relative;
+    scroll-snap-align: center;
 }
 
 body > main > section.splash > div.container {

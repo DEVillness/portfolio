@@ -28,5 +28,5 @@ public class RootController {
         this.rootService.insertMessage(messageEntity);
         return "root/index";
     }
-    // https://837477.github.io/
+    // TODO: Interceptor, Normalization,
 }

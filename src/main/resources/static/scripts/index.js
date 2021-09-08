@@ -1,9 +1,10 @@
 const headerIcons = document.querySelectorAll("body > header > ul > li > img");
 const sections = document.querySelectorAll("body > main > section.splash");
+const main = document.querySelector("body > main");
 
 for (let i = 0; i < headerIcons.length; i++) {
     headerIcons[i].onclick = () => {
-        window.scrollTo({top: sections[i].offsetTop, left: 0, behavior: 'smooth'});
+        main.scrollTo({top: sections[i].offsetTop, left: 0, behavior: 'smooth'});
     };
 }
 
