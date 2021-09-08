@@ -1,4 +1,7 @@
+<%@ page import="net.devillness.portfolio.enums.MessageResult" %>
 <%@ page language="java" contentType="text/html" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--@elvariable id="messageResult" type="net.devillness.portfolio.enums.MessageResult"--%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,6 +15,19 @@
     <link rel="stylesheet" href="stylesheets/index.css">
     <script defer src="scripts/index.js"></script>
     <title>📚 DEVIllness's Portfolio</title>
+    <c:choose>
+        <c:when test="${messageResult == MessageResult.SUCCESS}">
+            <script>
+                alert('메세지를 성공적으로 보냈습니다..');
+            </script>
+        </c:when>
+        <c:when test="${messageResult == MessageResult.NORMALIZATION_FAILURE}">
+            <script>
+                alert('올바른 정보를 입력해 주세요.');
+                window.history.back();
+            </script>
+        </c:when>
+    </c:choose>
 </head>
 <body>
 <%@ include file="/WEB-INF/views/header.jsp" %>
@@ -27,25 +43,25 @@
             <span class="phrase">A Lifelong Apprentice</span>
             <div class="division">
                 <span>
-                    만나서 반갑습니다!🤗
+                    <nobr>만나서 반갑습니다!🤗</nobr>
                     <br>
-                    저는 항상 어제보다 나은 사람이 되고 싶은 개발자입니다.
+                    <nobr>저는 항상 어제보다 나은 사람이 되고 싶은 개발자입니다.</nobr>
                     <br>
-                    현재는 웹 백엔드 개발을 하고 있고,
+                    <nobr>현재는 웹 백엔드 개발을 하고 있고,</nobr>
                     <br>
-                    항상 새롭고 신기한 것들을 배우려고 노력하고 있습니다.
+                    <nobr>항상 새롭고 신기한 것들을 배우려고 노력하고 있습니다.</nobr>
                 </span>
             </div>
             <div class="divider"></div>
             <div class="division">
                 <span>
-                    Hello, World!🙋‍♂
+                    <nobr>Hello, World!🙋‍♂</nobr>
                     <br>
-                    I am a developer who wants to be greater than yesterday.
+                    <nobr>I am a developer who wants to be greater than yesterday.</nobr>
                     <br>
-                    Now I'm basically developing web backends,
+                    <nobr>Now I'm basically developing web backends,</nobr>
                     <br>
-                    and also always open to learn anything new and amazing.
+                    <nobr>and also always open to learn anything new and amazing.</nobr>
                 </span>
             </div>
         </div>
@@ -58,18 +74,8 @@
                     <span><nobr>한양대학교 공과대학 융합전자공학부 학사</nobr></span>
                     <span><nobr>Hanyang University, B.Sc. in Electronic Engineering</nobr></span>
                 </div>
-                <div class="stacks">
-                    <span>#Java</span>
-                    <span><nobr>#Spring Framework</nobr></span>
-                    <span><nobr>#MVC Model</nobr></span>
-                    <span>#MySQL</span>
-                    <span>#MariaDB</span>
-                    <span>#JSP</span>
-                    <span>#HTML</span>
-                    <span>#CSS</span>
-                    <span>#JavaScript</span>
-                    <span>#Linux</span>
-                    <span><nobr>#TOEIC: 955</nobr></span>
+                <div class="projects">
+                    <span>Projects that I have worked on</span>
                 </div>
             </div>
             <div>
@@ -103,7 +109,7 @@
                     </div>
                     <div class="spring">
                         <div class="text">
-                            <span>Spring Framework</span>
+                            <span>Spring Boot</span>
                             <span>80%</span>
                         </div>
                         <div class="container">
@@ -112,7 +118,7 @@
                     </div>
                     <div class="sql">
                         <div class="text">
-                            <span>Database</span>
+                            <span>Database (RDBMS)</span>
                             <span>80%</span>
                         </div>
                         <div class="container">
@@ -120,8 +126,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects">
-                    <span>Projects that I have worked on</span>
+                <div class="stacks">
+                    <span>#Java</span>
+                    <span><nobr>#Spring Boot</nobr></span>
+                    <span><nobr>#MVC Model</nobr></span>
+                    <span>#MySQL</span>
+                    <span>#MariaDB</span>
+                    <span>#JSP</span>
+                    <span>#HTML</span>
+                    <span>#CSS</span>
+                    <span>#JavaScript</span>
+                    <span>#Linux</span>
+                    <span>#GCP</span>
+                    <span>#Algorithm</span>
+                    <span><nobr>#Data Structure</nobr></span>
+                    <span><nobr>#TOEIC: 955</nobr></span>
                 </div>
             </div>
         </div>

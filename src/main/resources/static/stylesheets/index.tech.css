@@ -34,17 +34,8 @@ body > main > section.splash.tech > div > div > div.career > span.date {
     font-weight: 800;
 }
 
-body > main > section.splash.tech > div > div > div.stacks {
+body > main > section.splash.tech > div > div > div.projects {
     height: 50%;
-    line-height: 300%;
-}
-
-body > main > section.splash.tech > div > div > div.stacks > span {
-    background-color: #007acc;
-    border-radius: 0.125rem;
-    color: #ffffff;
-    display: inline;
-    padding: 0.25rem 0.5rem;
 }
 
 body > main > section.splash.tech > div > div > div.graph {
@@ -66,12 +57,9 @@ body > main > section.splash.tech > div > div > div.graph > div > div.container 
 }
 
 body > main > section.splash.tech > div > div > div.graph > div > div.container > div {
-    top: 50%;
-    left: 0;
     height: 100%;
     background-color: #007acc;
     border-radius: 1rem;
-    /*transform: translateY(-50%);*/
 }
 
 body > main > section.splash.tech > div > div > div.graph > div.back-end > div.container > div {
@@ -94,6 +82,16 @@ body > main > section.splash.tech > div > div > div.graph > div.sql > div.contai
     width: 80%;
 }
 
-body > main > section.splash.tech > div > div > div.projects {
+body > main > section.splash.tech > div > div > div.stacks {
     height: 30%;
+    line-height: 250%;
+    padding: 2rem;
+}
+
+body > main > section.splash.tech > div > div > div.stacks > span {
+    background-color: #007acc;
+    border-radius: 0.125rem;
+    color: #ffffff;
+    display: inline;
+    padding: 0.25rem 0.5rem;
 }
