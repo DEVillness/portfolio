@@ -147,11 +147,13 @@
                     <span>#MySQL</span>
                     <span>#MariaDB</span>
                     <span>#JSP</span>
+                    <span>#JSTL</span>
                     <span>#HTML</span>
                     <span>#CSS</span>
                     <span>#JavaScript</span>
                     <span>#Linux</span>
                     <span>#GCP</span>
+                    <span>#Github</span>
                     <span>#Algorithm</span>
                     <span><nobr>#Data Structure</nobr></span>
                     <span><nobr>#TOEIC: 955</nobr></span>
