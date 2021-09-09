@@ -20,4 +20,7 @@ public interface ISecurityMapper {
     int selectBlockedIpCount(ClientModel clientModel);
 
     int selectBlockedIpCountSoFar(ClientModel clientModel);
+
+    int selectRepeatedMessageCount(@Param("clientModel") ClientModel clientModel,
+                                   @Param("lookBackSeconds") int lookBackSeconds);
 }

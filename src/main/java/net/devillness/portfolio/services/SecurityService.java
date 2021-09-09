@@ -12,6 +12,8 @@ public class SecurityService {
         public static final int ILLEGAL_LOG_LOOK_BACK_SECONDS = 60;
         public static final int ILLEGAL_LOG_LIMIT_COUNT = 5;
         public static final int IP_BLOCK_POW_FACTOR = 2;
+        public static final int MESSAGE_LOG_LOOK_BACK_SECONDS = 300;
+        public static final int MESSAGE_LOG_LIMIT_COUNT = 5;
 
         private Config() {
         }
@@ -28,11 +30,7 @@ public class SecurityService {
         return this.securityMapper.selectBlockedIpCount(clientModel) > 0;
     }
 
-    public void putIllegalLog(ClientModel clientModel, IResult<? extends Enum<?>> result) {
-        this.securityMapper.insertIllegalLog(clientModel, result);
-        if (this.securityMapper.selectIllegalLogCount(clientModel, Config.ILLEGAL_LOG_LOOK_BACK_SECONDS) < Config.ILLEGAL_LOG_LIMIT_COUNT) {
-            return;
-        }
+    public void blockIp(ClientModel clientModel) {
         int blockedIpCount = this.securityMapper.selectBlockedIpCountSoFar(clientModel);
         int minutesToBlock;
         try {
@@ -44,5 +42,20 @@ public class SecurityService {
             minutesToBlock = Integer.MAX_VALUE;
         }
         this.securityMapper.insertBlockedIp(clientModel, minutesToBlock);
+    }
+
+    public void checkRepeatedRequest(ClientModel clientModel) {
+        if(this.securityMapper.selectRepeatedMessageCount(clientModel, Config.MESSAGE_LOG_LOOK_BACK_SECONDS) < Config.MESSAGE_LOG_LIMIT_COUNT) {
+            return;
+        }
+        blockIp(clientModel);
+    }
+
+    public void putIllegalLog(ClientModel clientModel, IResult<? extends Enum<?>> result) {
+        this.securityMapper.insertIllegalLog(clientModel, result);
+        if (this.securityMapper.selectIllegalLogCount(clientModel, Config.ILLEGAL_LOG_LOOK_BACK_SECONDS) < Config.ILLEGAL_LOG_LIMIT_COUNT) {
+            return;
+        }
+        blockIp(clientModel);
     }
 }

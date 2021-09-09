@@ -14,20 +14,34 @@
     <link rel="stylesheet" href="stylesheets/common.css">
     <link rel="stylesheet" href="stylesheets/index.css">
     <script defer src="scripts/index.js"></script>
-    <title>📚 DEVIllness's Portfolio</title>
-    <c:choose>
-        <c:when test="${messageResult == MessageResult.SUCCESS}">
-            <script>
-                alert('메세지를 성공적으로 보냈습니다..');
-            </script>
-        </c:when>
-        <c:when test="${messageResult == MessageResult.NORMALIZATION_FAILURE}">
-            <script>
-                alert('올바른 정보를 입력해 주세요.');
-                window.history.back();
-            </script>
-        </c:when>
-    </c:choose>
+    <title>DEVIllness's Portfolio</title>
+    <c:if test="${messageResult != null}">
+        <c:choose>
+            <c:when test="${messageResult == MessageResult.SUCCESS}">
+                <script>
+                    alert('메세지를 성공적으로 보냈습니다.\nSent message successfully.');
+                </script>
+            </c:when>
+            <c:when test="${messageResult == MessageResult.NORMALIZATION_FAILURE}">
+                <script>
+                    alert('올바른 정보를 입력해 주세요.\nPlease fill in valid information.');
+                    window.history.back();
+                </script>
+            </c:when>
+            <c:when test="${messageResult == MessageResult.BLOCKED}">
+                <script>
+                    alert('단시간에 다수의 요청이 감지되었습니다.\nToo many requests in a short period.');
+                    window.location.href='${pageContext.request.contextPath}';
+                </script>
+            </c:when>
+            <c:otherwise>
+                <script>
+                    alert('잘못된 접근입니다.\nUnknown error occurred.');
+                    window.history.back();
+                </script>
+            </c:otherwise>
+        </c:choose>
+    </c:if>
 </head>
 <body>
 <%@ include file="/WEB-INF/views/header.jsp" %>
@@ -47,9 +61,9 @@
                     <br>
                     <nobr>저는 항상 어제보다 나은 사람이 되고 싶은 개발자입니다.</nobr>
                     <br>
-                    <nobr>현재는 웹 백엔드 개발을 하고 있고,</nobr>
+                    <nobr>현재는 주로 웹 백엔드 개발을 하고 있지만,</nobr>
                     <br>
-                    <nobr>항상 새롭고 신기한 것들을 배우려고 노력하고 있습니다.</nobr>
+                    <nobr>그 밖에도 항상 새롭고 신기한 것들을 배우려고 노력하고 있습니다.</nobr>
                 </span>
             </div>
             <div class="divider"></div>
@@ -61,7 +75,7 @@
                     <br>
                     <nobr>Now I'm basically developing web backends,</nobr>
                     <br>
-                    <nobr>and also always open to learn anything new and amazing.</nobr>
+                    <nobr>but also always open to learn anything new and interesting.</nobr>
                 </span>
             </div>
         </div>
@@ -172,7 +186,7 @@
                         <input type="text" name="email" placeholder="Available Email">
                         <input type="text" name="title" placeholder="Title">
                         <textarea name="content"></textarea>
-                        <input type="submit" value="Send Message">
+                        <input type="submit" value="Leave Me a Message">
                     </label>
                 </form>
             </div>

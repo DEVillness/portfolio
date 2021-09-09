@@ -13,8 +13,8 @@ body > main > section.splash.message > div > div {
 }
 
 body > main > section.splash.message > div > div.left > div {
-    width: 70%;
-    height: 23%;
+    width: 60%;
+    height: 20%;
     align-items: center;
     background-color: #dfdfdf;
     border-radius: 1rem;
@@ -28,7 +28,7 @@ body > main > section.splash.message > div > div.left > div {
 }
 
 body > main > section.splash.message > div > div.left > div > img {
-    width: 4rem;
+    width: 3.5rem;
 }
 
 body > main > section.splash.message > div > div.left > div > span {
@@ -58,12 +58,12 @@ body > main > section.splash.message > div > div.right > form > label {
 }
 
 body > main > section.splash.message > div > div.right > form > label > input {
-    width: 70%;
+    width: 80%;
     height: 1.5rem;
 }
 
 body > main > section.splash.message > div > div.right > form > label > textarea {
-    width: 70%;
+    width: 80%;
     height: 60%;
     resize: none;
 }

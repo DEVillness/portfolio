@@ -38,4 +38,13 @@
         FROM `portfolio`.`blocked_ips`
         WHERE `ip` = #{ip}
     </select>
+
+    <select id="selectRepeatedMessageCount" resultType="_int">
+        <![CDATA[
+        SELECT COUNT(0)
+        FROM `portfolio`.`messages`
+        WHERE `datetime` >= DATE_SUB(NOW(), INTERVAL #{lookBackSeconds} SECOND)
+          AND `ip` = #{clientModel.ip}
+        ]]>
+    </select>
 </mapper>

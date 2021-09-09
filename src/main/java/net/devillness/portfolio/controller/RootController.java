@@ -35,9 +35,15 @@ public class RootController {
     public String indexPost(@RequestAttribute("clientModel") ClientModel clientModel,
                             MessageVo messageVo,
                             HttpServletRequest request) {
-        this.rootService.insertMessage(messageVo);
-        if (messageVo.getResult() != MessageResult.SUCCESS) {
+        this.securityService.checkRepeatedRequest(clientModel);
+        if(this.securityService.isIpBlocked(clientModel)) {
+            messageVo.setResult(MessageResult.BLOCKED);
             this.securityService.putIllegalLog(clientModel, messageVo);
+        } else {
+            this.rootService.insertMessage(clientModel, messageVo);
+            if (messageVo.getResult() != MessageResult.SUCCESS) {
+                this.securityService.putIllegalLog(clientModel, messageVo);
+            }
         }
         request.setAttribute("messageResult", messageVo.getResult());
         return "root/index";

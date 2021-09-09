@@ -10,6 +10,7 @@ body > main > section.splash.profile > div > span.phrase {
     font-family: 'Inconsolata', 'Nanum Gothic', sans-serif;
     font-size: 4rem;
     font-weight: 400;
+    padding-left: 5%;
 }
 
 body > main > section.splash.profile > div > div.divider {
