@@ -9,5 +9,5 @@ for (let i = 0; i < headerIcons.length; i++) {
 }
 
 document.getElementById('github').onclick = () => {
-    window.open('https://github.com/Devillness');
+    window.open('https://github.com/DEVillness');
 };

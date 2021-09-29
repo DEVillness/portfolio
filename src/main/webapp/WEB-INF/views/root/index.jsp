@@ -71,7 +71,7 @@
                 <span>
                     <nobr>Hello, World!🙋‍♂</nobr>
                     <br>
-                    <nobr>I am a developer who wants to be greater than yesterday.</nobr>
+                    <nobr>I am a developer who always wants to be greater than yesterday.</nobr>
                     <br>
                     <nobr>Now I'm basically developing web backends,</nobr>
                     <br>
@@ -89,7 +89,15 @@
                     <span><nobr>Hanyang University, B.Sc. in Electronic Engineering</nobr></span>
                 </div>
                 <div class="projects">
-                    <span>Projects that I have worked on</span>
+                    <span>Personal Projects</span>
+                    <div>
+                        <div class="description">
+                            <span class="link" onclick="window.open('https://github.com/DEVillness/pmss');">PMSS</span>
+                            <br>
+                            <span>모바일 게임 &lt;명일방주&gt;를 위한 여러 가지 편의 기능들을 제공하는 사이트입니다.</span>
+                        </div>
+                        <div class="view" onclick="window.open('https://pmss.devillness.net');"></div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -170,7 +178,7 @@
                 </div>
                 <div>
                     <img alt="Github" src="images/github.png">
-                    <span id="github">#Devillness</span>
+                    <span id="github">#DEVillness</span>
                 </div>
                 <div>
                     <img alt="Email" src="images/mail.png">

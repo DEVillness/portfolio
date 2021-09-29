@@ -14,7 +14,7 @@ body > header {
 
 body > header > ul > li > img {
     width: 3rem;
-    cursor:pointer;
+    cursor: pointer;
     margin: 1rem;
     -webkit-user-drag: none;
 }
