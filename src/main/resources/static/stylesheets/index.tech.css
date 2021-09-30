@@ -60,11 +60,13 @@ body > main > section.splash.tech > div > div > div.projects > div > div.descrip
     line-height: 125%;
 }
 
-body > main > section.splash.tech > div > div > div.projects > div > div.description > span.link {
-    color: #007acc;
-    cursor: pointer;
+body > main > section.splash.tech > div > div > div.projects > div > div.description > span.title {
     font-size: 1rem;
     font-weight: 800;
+}
+
+body > main > section.splash.tech > div > div > div.projects > div > div.description > a > img {
+    height: 1rem;
 }
 
 body > main > section.splash.tech > div > div > div.projects > div > div.view {
