@@ -92,7 +92,9 @@
                     <span>Personal Projects</span>
                     <div>
                         <div class="description">
-                            <span class="link" onclick="window.open('https://github.com/DEVillness/pmss');">PMSS</span>
+                            <span class="title">PMSS</span>
+                            <a href="https://github.com/DEVillness/pmss" target="_blank"><img alt="link" src="images/github.png"></a>
+                            <a href="https://pmss.devillness.net" target="_blank"><img alt="link" src="images/link.png"></a>
                             <br>
                             <span>모바일 게임 &lt;명일방주&gt;를 위한 여러 가지 편의 기능들을 제공하는 사이트입니다.</span>
                         </div>
